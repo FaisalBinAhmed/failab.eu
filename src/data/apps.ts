@@ -341,8 +341,42 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 			}
 		],
 		tag: "Mac",
-		screenshots: [],
-		featurelist: [],
+		screenshots: [
+			{
+				path: "https://i.imgur.com/IMfVxsM.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://i.imgur.com/J8zMqWK.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://i.imgur.com/CKMh2uo.png",
+				description: "this is a screenshot description"
+			}
+		],
+		featurelist: [
+			{
+				title: "Presentation",
+				description: "Visualize your keystrokes in style."
+			},
+			{
+				title: "Customization",
+				description: "Personalize the look of keys."
+			},
+			{
+				title: "Familiarity",
+				description: "The keys look and feel just like your physical device."
+			},
+			{
+				title: "Control",
+				description: "Limit the number of keys and their lifetime on screen."
+			},
+			{
+				title: "Secure",
+				description: "Privacy-focused, no data collection whatsoever."
+			}
+		],
 		privacyInfo: {
 			lastDate: "March 28 2023",
 			data: `Cliptonite does not collect any user information.
