@@ -19,7 +19,7 @@ import Image from "next/image";
 
 export function NavBar() {
 	return (
-		<div className="p-4 flex flex-row justify-between">
+		<div className="p-4 flex flex-row justify-between bg-white text-black">
 			<NavMenu />
 			{/* <Link href="/" legacyBehavior passHref>
 				<img className="w-12" src="/assets/failab.webp" />
