@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { CarouselBar } from "@/components/CarouselBar";
+import Feedbacks from "@/components/Feedbacks";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
+	return (
 		<main
-			className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
+			className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}>
 			<CarouselBar />
+			<Feedbacks />
 		</main>
 	);
 }
