@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const About = () => {
 	return (
-		<div className="flex flex-col gap-4 p-8 lg:px-96">
+		<div className="flex flex-col gap-4 p-8 max-w-4xl">
 			<h1 className="text-lg font-bold">About Failab</h1>
 			<p>
 				Failab is the home for projects I make during my weekends and holidays.
