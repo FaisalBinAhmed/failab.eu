@@ -58,6 +58,42 @@ export const appsData: AppsDataItem[] = [
 			}
 		],
 		tag: "Chrome",
+		featurelist: [
+			{
+				title: "Automatic",
+				description:
+					"Automatically create new tab groups when you open a link in a new tab"
+			},
+			{
+				title: "Smart",
+				description: "Auto Collapse inactive tab groups."
+			},
+			{
+				title: "Blocklist",
+				description:
+					"Don't want to create tab groups from a specific site? Create a blacklist from the settings or add the site to the blacklist right from the toolbar!"
+			},
+			{
+				title: "Custom Rules",
+				description:
+					"Create custom tab grouping rules: always create tab groups with a specific name and color from your favorite websites!"
+			},
+			{
+				title: "Easy",
+				description:
+					"View current tab groups and act upon them by clicking on the extension icon right from the toolbar."
+			},
+			{
+				title: "Advanced",
+				description:
+					"Option to close an existing tab group when there is only 1 tab left in it. Limit maximum number of tabs allowed in a group."
+			},
+			{
+				title: "Sync",
+				description:
+					"Sync all your settings, tab groups, and custom lists with browser"
+			}
+		],
 		screenshots: [
 			{
 				path: "/assets/tabius/tb2.png",
