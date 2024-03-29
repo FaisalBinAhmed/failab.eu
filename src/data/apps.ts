@@ -257,8 +257,7 @@ Please note: Scaler does not need and should not ask for any permissions.`
 		title: "KeyTrails",
 		heroThumb: "/assets/keytrails/kt5.png",
 		icon: "/assets/keytrails/keytrails-logo.png",
-		description:
-			"Present your keystrokes on screen with style - for macOS devices",
+		description: "Present your keystrokes on screen with style",
 		color: "#2F4DB2",
 		storeLinks: [
 			{
@@ -381,6 +380,29 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 			lastDate: "March 28 2023",
 			data: `Cliptonite does not collect any user information.
 Please note: Cliptonite does not need and should not ask for any permissions.`
+		}
+	},
+	{
+		id: 5,
+		title: "ListCalculation",
+		heroThumb: "/assets/list-calculation/lc-logo.png",
+		icon: "/assets/list-calculation/lc-logo.png",
+		description:
+			"Create personal budget sheet or invoice without complex formula!",
+		color: "#2F4DB2",
+		storeLinks: [
+			{
+				storeType: "macOS",
+				link: "https://apps.apple.com/us/app/"
+			}
+		],
+		tag: "iOS",
+		screenshots: [],
+		featurelist: [],
+		privacyInfo: {
+			lastDate: "March 30 2024",
+			data: `List Calculation does not collect any user information. User preference for the app is stored within the device itself and does not leave the device.
+`
 		}
 	}
 ];

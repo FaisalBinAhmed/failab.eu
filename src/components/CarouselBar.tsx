@@ -39,7 +39,7 @@ export function CarouselBar() {
 								</div>
 								<div
 									style={{ backgroundColor: app.color }}
-									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full md:w-1/2 p-4`}>
+									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full md:w-1/2 p-4 md:px-8`}>
 									<p
 										style={{ color: app.fontColor ?? "white" }}
 										className="text-m">

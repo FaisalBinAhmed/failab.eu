@@ -23,7 +23,7 @@ export default function AppDetails() {
 	return (
 		<>
 			<div className="flex flex-col md:flex-row w-full p-8">
-				<div className="w-1/2 flex flex-col gap-4">
+				<div className="grow min-w-72 flex flex-col gap-4">
 					<Image
 						src={app.icon}
 						alt={`${app.title} logo`}
@@ -35,10 +35,7 @@ export default function AppDetails() {
 					</div>
 					<div className={`flex flex-col gap-2 justify-center w-full`}>
 						<p className="text-m">{app.description}</p>
-						<Link href={`/app/${app.title.toLowerCase()}`}>
-							<p className="text-m underline">Learn More</p>
-						</Link>
-						<div className="flex space-x-4 pt-4">
+						<div className="flex gap-4 pt-4 flex-wrap">
 							{app.storeLinks.map((store) => (
 								<Link
 									key={store.storeType}
@@ -47,7 +44,7 @@ export default function AppDetails() {
 									<img
 										src={`/assets/${store.storeType}.png`}
 										alt={`${store.storeType} logo`}
-										className="max-h-16 object-cover"
+										className="h-16 object-cover"
 									/>
 								</Link>
 							))}
@@ -55,8 +52,8 @@ export default function AppDetails() {
 					</div>
 				</div>
 
-				<div className="flex items-center flex-1 p-8 md:px-24">
-					<Carousel className="w-full">
+				<div className="flex items-center p-8 md:px-24">
+					<Carousel className="">
 						<CarouselContent>
 							{app.screenshots.map((screenshot) => (
 								<CarouselItem key={screenshot.path}>
