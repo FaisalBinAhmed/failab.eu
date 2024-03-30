@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export function CarouselBar() {
 	return (
-		<div className="px-24 py-8 w-full">
+		<div className="p-8 w-full">
 			<Carousel
 				plugins={[
 					Autoplay({
@@ -25,8 +25,8 @@ export function CarouselBar() {
 				<CarouselContent>
 					{appsData.map((app) => (
 						<CarouselItem key={app.id}>
-							<div className="flex flex-col md:flex-row items-center justify-between h-96 border border-gray-200 rounded-md shadow-md">
-								<div className="flex flex-col w-1/2 justify-center items-center p-4">
+							<div className="flex w-full flex-col md:flex-row items-center justify-between h-[24rem] md:h-64 border border-gray-200 rounded-md shadow-md">
+								<div className="flex flex-col flex-1 justify-center items-center p-4">
 									<Image
 										src={app.icon}
 										alt={`${app.title} logo`}
@@ -39,20 +39,20 @@ export function CarouselBar() {
 								</div>
 								<div
 									style={{ backgroundColor: app.color }}
-									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full md:w-1/2 p-4 md:px-8`}>
+									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full flex-1 p-4`}>
 									<p
 										style={{ color: app.fontColor ?? "white" }}
 										className="text-m">
 										{app.description}
 									</p>
-									<Link href={`/app/${app.title.toLowerCase()}`}>
+									<Link href={`/app/${app.id}`}>
 										<p
 											style={{ color: app.fontColor ?? "white" }}
 											className="text-m underline">
 											Learn More
 										</p>
 									</Link>
-									<div className="flex space-x-4">
+									<div className="flex space-x-4 pt-2">
 										{app.storeLinks.map((store) => (
 											<Link
 												key={store.storeType}
@@ -71,8 +71,8 @@ export function CarouselBar() {
 						</CarouselItem>
 					))}
 				</CarouselContent>
-				<CarouselPrevious />
-				<CarouselNext />
+				{/* <CarouselPrevious />
+				<CarouselNext /> */}
 			</Carousel>
 		</div>
 	);

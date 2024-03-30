@@ -1,7 +1,7 @@
 const Feedbacks = () => {
 	return (
-		<div className="flex flex-col w-full bg-[#f0dbb0] p-8">
-			<h2 className="m-auto text-lg font-bold pb-4">What people are saying</h2>
+		<div className="flex flex-col w-full bg-[#fff2e9] p-8">
+			<h2 className="m-auto text-xl pb-4">Testimonials</h2>
 			<div className="flex flex-col">
 				<FeedbackCard
 					name="Benjamin -> Tabius"
@@ -42,8 +42,10 @@ const FeedbackCard: React.FC<FeedbackProp> = ({ name, stars, review }) => {
 	return (
 		<div className="flex flex-col p-8 m-4 md:w-2/5 bg-white md:even:self-end rounded">
 			<div className="flex justify-between">
-				<div style={{ color: "grey" }}>{name}</div>
-				<div>{[...Array(stars)].map((item) => "★")}</div>
+				<div className="text-gray-500">{name}</div>
+				<div className="text-yellow-500">
+					{[...Array(stars)].map((item) => "★")}
+				</div>
 			</div>
 			<div className="mt-4">{review}</div>
 		</div>

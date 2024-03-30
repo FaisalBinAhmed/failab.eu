@@ -16,7 +16,7 @@ export interface Feature {
 	description: string;
 }
 export interface AppsDataItem {
-	id: number;
+	id: string; // used as the unique url id
 	title: string;
 	heroThumb: string;
 	icon: string;
@@ -40,11 +40,12 @@ export const appNames: string[] = [
 
 export const appsData: AppsDataItem[] = [
 	{
-		id: 0,
+		id: "tabius",
 		title: "Tabius",
 		heroThumb: "/assets/tabius/tabius.jpeg",
 		icon: "/assets/tabius/tabius-logo.jpeg",
-		description: "Tab Grouping Assistant for Chrome and Microsoft Edge",
+		description:
+			"Intelligent Tab Grouping Assistant for Chrome and Microsoft Edge. Completely open source.",
 		color: "#B6D1E4",
 		fontColor: "black",
 		storeLinks: [
@@ -114,11 +115,11 @@ export const appsData: AppsDataItem[] = [
 		]
 	},
 	{
-		id: 1,
+		id: "trilby",
 		title: "Trilby",
 		heroThumb: "/assets/trilby/trilby.png",
 		icon: "/assets/trilby/trilby-logo.webp",
-		description: "Best Hacker News App for Android - completely free!",
+		description: "Best Hacker News App for Android and iOS - completely free.",
 		color: "#FFF3E9",
 		fontColor: "black",
 		storeLinks: [
@@ -197,7 +198,7 @@ export const appsData: AppsDataItem[] = [
 		]
 	},
 	{
-		id: 2,
+		id: "scaler",
 		title: "Scaler",
 		heroThumb: "/assets/scaler/scaler.jpeg",
 		icon: "/assets/scaler/scaler-logo.webp",
@@ -253,12 +254,13 @@ Please note: Scaler does not need and should not ask for any permissions.`
 		}
 	},
 	{
-		id: 3,
+		id: "keytrails",
 		title: "KeyTrails",
 		heroThumb: "/assets/keytrails/kt5.png",
 		icon: "/assets/keytrails/keytrails-logo.png",
-		description: "Present your keystrokes on screen with style",
-		color: "#2F4DB2",
+		description:
+			"Present your keystrokes on screen with style. Ultralight and privacy friendly.",
+		color: "#0066d3",
 		storeLinks: [
 			{
 				storeType: "macOS",
@@ -327,16 +329,17 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 		}
 	},
 	{
-		id: 4,
+		id: "cliptonite",
 		title: "Cliptonite",
 		heroThumb: "/assets/cliptonite/logo.png",
 		icon: "/assets/cliptonite/logo.png",
-		description: "Beautiful and Fast Clipboard App",
-		color: "#2F4DB2",
+		description: "Beautiful and Fast Clipboard manager app for macOS.",
+		color: "#09d07e",
+		fontColor: "black",
 		storeLinks: [
 			{
 				storeType: "macOS",
-				link: "https://apps.apple.com/us/app/keytrails/id1632266803"
+				link: "https://apps.apple.com/app/id6446803122"
 			}
 		],
 		tag: "Mac",
@@ -383,17 +386,17 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 		}
 	},
 	{
-		id: 5,
-		title: "ListCalculation",
+		id: "listcalculation",
+		title: "List Calculation",
 		heroThumb: "/assets/list-calculation/lc-logo.png",
 		icon: "/assets/list-calculation/lc-logo.png",
 		description:
 			"Create personal budget sheet or invoice without complex formula!",
-		color: "#2F4DB2",
+		color: "#7d57c1",
 		storeLinks: [
 			{
 				storeType: "macOS",
-				link: "https://apps.apple.com/us/app/"
+				link: "https://apps.apple.com/app/id6476781364"
 			}
 		],
 		tag: "iOS",

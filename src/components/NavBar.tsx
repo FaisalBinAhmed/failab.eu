@@ -49,7 +49,7 @@ function NavMenu() {
 									<NavigationMenuLink asChild>
 										<Link
 											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-											href={`/app/${app.title.toLowerCase()}`}>
+											href={`/app/${app.id}`}>
 											<Image
 												src={app.icon}
 												alt={`${app.title} logo`}

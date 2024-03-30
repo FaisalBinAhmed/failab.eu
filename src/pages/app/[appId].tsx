@@ -16,7 +16,7 @@ export default function AppDetails() {
 	const router = useRouter();
 	const { appId } = router.query;
 
-	const app = appsData.find((app) => app.title.toLowerCase() === appId);
+	const app = appsData.find((app) => app.id.toLowerCase() === appId);
 
 	if (!app) return <div>App not found</div>;
 
