@@ -31,7 +31,7 @@ const Footer = () => {
 					<p>Made with ♥ in Munich</p>
 				</div>
 				<div className="flex flex-col justify-end h-full">
-					<img className="mb-8" src="/assets/munich.png" />
+					<img className="mb-8 h-32" src="/assets/munich.svg" />
 				</div>
 			</div>
 		</div>

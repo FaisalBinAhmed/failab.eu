@@ -400,8 +400,48 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 			}
 		],
 		tag: "iOS",
-		screenshots: [],
-		featurelist: [],
+		screenshots: [
+			{
+				path: "https://imgur.com/moErHxr.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://imgur.com/Vj075iG.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://imgur.com/nhZmTb7.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://imgur.com/9nT0wPv.png",
+				description: "this is a screenshot description"
+			},
+			{
+				path: "https://imgur.com/gLZiDbR.png",
+				description: "this is a screenshot description"
+			}
+		],
+		featurelist: [
+			{
+				title: "Simple",
+				description: "Formula-less calculation thanks to Action rows"
+			},
+			{
+				title: "Powerful",
+				description: "Spreadsheet like realtime calculation"
+			},
+			{
+				title: "Export",
+				description:
+					"Export the list to PDF: Create a quick invoice or share your monthly budget with friends"
+			},
+			{
+				title: "Comprehensive",
+				description:
+					"Connect Action rows with each other to create complex calculation"
+			}
+		],
 		privacyInfo: {
 			lastDate: "March 30 2024",
 			data: `List Calculation does not collect any user information. User preference for the app is stored within the device itself and does not leave the device.
