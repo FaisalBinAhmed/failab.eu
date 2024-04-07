@@ -1,8 +1,8 @@
 const Feedbacks = () => {
 	return (
-		<div className="flex flex-col w-full bg-[#fff2e9] p-8">
+		<div className="flex flex-col w-full bg-[#fff2e9] p-4">
 			<h2 className="m-auto text-xl pb-4">Testimonials</h2>
-			<div className="flex flex-col">
+			<div className="flex flex-col md:flex-row overflow-x-scroll gap-4">
 				<FeedbackCard
 					name="Benjamin -> Tabius"
 					stars={5}
@@ -13,8 +13,6 @@ const Feedbacks = () => {
 					stars={5}
 					review="Simple, customizable and functional for reading HN! Amazing first release! (:"
 				/>
-			</div>
-			<div className="flex flex-col">
 				<FeedbackCard
 					name="Klunkstein -> Scaler"
 					stars={5}
@@ -40,7 +38,7 @@ interface FeedbackProp {
 
 const FeedbackCard: React.FC<FeedbackProp> = ({ name, stars, review }) => {
 	return (
-		<div className="flex flex-col p-8 m-4 md:w-2/5 bg-white md:even:self-end rounded">
+		<div className="flex flex-col p-8 min-w-80 bg-white rounded">
 			<div className="flex justify-between">
 				<div className="text-gray-500">{name}</div>
 				<div className="text-yellow-500">

@@ -9,7 +9,9 @@ const HeroSection = () => {
 				<p className="bg-clip-text text-6xl text-transparent bg-gradient-to-r from-[#ff5649] to-[#019ee3]">
 					Failab
 				</p>
-				<p className="text-2xl">Hobby projects with commercial app quality</p>
+				<p className="text-2xl text-center">
+					Hobby projects with commercial app quality
+				</p>
 				<div className="flex gap-4">
 					<Button
 						onClick={() => {
