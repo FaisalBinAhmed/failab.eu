@@ -25,7 +25,7 @@ export function CarouselBar() {
 				<CarouselContent>
 					{appsData.map((app) => (
 						<CarouselItem key={app.id}>
-							<div className="flex w-full flex-col md:flex-row items-center justify-between h-[24rem] md:h-64 border border-gray-200 rounded-md shadow-md">
+							<div className="flex w-full flex-col md:flex-row items-center justify-between h-[24rem] md:h-64 rounded-md shadow-md">
 								<div className="flex flex-col flex-1 justify-center items-center p-4">
 									<Image
 										src={app.icon}
@@ -33,13 +33,13 @@ export function CarouselBar() {
 										width={128}
 										height={128}
 									/>
-									<div className="mt-2 text-xl font-medium text-gray-800">
+									<div className="mt-2 text-xl font-medium text-gray-100">
 										{app.title}
 									</div>
 								</div>
 								<div
 									style={{ backgroundColor: app.color }}
-									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full flex-1 p-4`}>
+									className={`flex flex-col gap-2 justify-center h-1/2 md:h-full rounded-xl flex-1 p-4`}>
 									<p
 										style={{ color: app.fontColor ?? "white" }}
 										className="text-m">
@@ -57,7 +57,7 @@ export function CarouselBar() {
 											<Link
 												key={store.storeType}
 												href={store.link}
-												className="text-sm text-blue-600">
+												className="text-sm text-blue-100">
 												<img
 													src={`/assets/${store.storeType}.png`}
 													alt={`${store.storeType} logo`}
