@@ -1,4 +1,5 @@
 import FeatureCard from "@/components/FeatureCard";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
 	Carousel,
 	CarouselContent,
@@ -21,7 +22,7 @@ export default function AppDetails() {
 	if (!app) return <div>App not found</div>;
 
 	return (
-		<>
+		<div className="w-full p-2 bg-[#121212]">
 			<div className="flex flex-col md:flex-row w-full p-8">
 				<div className="grow min-w-72 flex flex-col gap-4">
 					<Image
@@ -30,7 +31,7 @@ export default function AppDetails() {
 						width={128}
 						height={128}
 					/>
-					<div className="mt-2 text-xl font-medium text-gray-800">
+					<div className="mt-2 text-xl font-medium text-gray-100">
 						{app.title}
 					</div>
 					<div className={`flex flex-col gap-2 justify-center w-full`}>
@@ -72,16 +73,7 @@ export default function AppDetails() {
 					</Carousel>
 				</div>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 bg-[#fffff1]">
-				{app.featurelist?.map((feature, index) => (
-					<FeatureCard
-						index={index + 1}
-						title={feature.title}
-						description={feature.description}
-						color={featureColors[index + 1]}
-					/>
-				))}
-			</div>
-		</>
+			{app.featurelist && <HoverEffect items={app.featurelist} />}
+		</div>
 	);
 }
