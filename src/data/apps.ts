@@ -258,8 +258,7 @@ Please note: Scaler does not need and should not ask for any permissions.`
 		title: "KeyTrails",
 		heroThumb: "/assets/keytrails/kt6.png",
 		icon: "/assets/keytrails/keytrails-logo.png",
-		description:
-			"Present your keystrokes on screen with style. Ultralight and privacy friendly.",
+		description: "Present your keystrokes on screen with style.",
 		color: "#0066d3",
 		storeLinks: [
 			{

@@ -5,7 +5,7 @@ import { color } from "framer-motion";
 const AppHeader = ({ thumb }: { thumb: string }) => {
 	return (
 		<div className="flex flex-1 w-full h-full min-h-[6rem] justify-center rounded-xl">
-			<img src={thumb} />
+			<img className="w-full " src={thumb} />
 		</div>
 	);
 };
@@ -31,7 +31,7 @@ const MacosSection = () => {
 			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white pb-8">
 				MacOS Apps
 			</div>
-			<BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">
+			<BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]">
 				{items.map((item, i) => (
 					<BentoGridItem
 						key={i}

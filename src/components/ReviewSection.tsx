@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { TypewriterEffect } from "./ui/typewriter-effect";
 
 let keytrailReview =
 	"I've been looking for an app that shows the actual output of the pressed keys for a long time. This app shows e.g. the € symbol pressing the key combination alt-E (German layout). What I know no other app can do, is to display the output of uppercase and lowercase letters. This app does that. A fantastic app. The developer responds quickly and 100% to requests and suggestions. I can't recommend this app highly enough. Thank you.";
@@ -45,15 +46,28 @@ const ReviewCard = ({ id, content, name, designation }: ReviewCardProps) => {
 	);
 };
 
+const words = [
+	{
+		text: "What"
+	},
+	{
+		text: "people"
+	},
+	{
+		text: "are"
+	},
+	{
+		text: "saying"
+	}
+];
+
 const ReviewSection = () => {
 	return (
-		<div className="flex flex-col items-center">
-			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
-				What people are saying
-			</div>
-			{/* <div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white mb-2">
+		<div className="flex flex-col items-center bg-black bg-dot-white/[0.2] w-full py-8">
+			{/* <div className="text-2xl mx-4 md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
 				What people are saying
 			</div> */}
+			<TypewriterEffect words={words} />
 			<div className="flex flex-row flex-wrap justify-center gap-4 p-4 my-8">
 				<ReviewCard
 					id={1}
@@ -67,8 +81,7 @@ const ReviewSection = () => {
 							<Highlight>no other app can do</Highlight>, is to display the
 							output of uppercase and lowercase letters. This app does that. A
 							fantastic app. The developer responds quickly and 100% to requests
-							and suggestions. I can't recommend this app highly enough. Thank
-							you.
+							and suggestions. I can't recommend this app highly enough...
 						</p>
 					}
 				/>
@@ -87,9 +100,7 @@ const ReviewSection = () => {
 								{" "}
 								With Tabius, it's a totally different beast!
 							</Highlight>{" "}
-							The philosophy is very different, it groups tabs not by domain
-							even though it says so in the configuration screen, but also
-							temporally...
+							The philosophy is very different...
 						</p>
 					}
 				/>

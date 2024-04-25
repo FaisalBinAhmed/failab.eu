@@ -27,7 +27,7 @@ export default MobileAppSection;
 const MobileAppCard = ({ app }: { app: AppsDataItem }) => {
 	return (
 		<div className="flex-1">
-			<BackgroundGradient className="rounded-[22px] bg-zinc-900 p-4 bg-opacity-90 flex flex-col md:flex-row justify-between">
+			<BackgroundGradient className="rounded-[22px] bg-black p-4 bg-opacity-90 flex flex-col md:flex-row justify-between">
 				{/* <div
 				// style={{ backgroundColor: app.color }}
 				className="flex flex-col bg-[linear-gradient(110deg,#333_0.6%,#222)] flex-1 md:flex-row rounded-xl justify-between"> */}
