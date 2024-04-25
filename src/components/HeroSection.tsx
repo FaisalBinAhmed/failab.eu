@@ -51,9 +51,7 @@ export function HeroSection() {
 				}}
 				className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
 				Hobby projects with commercial app quality{" "}
-				<Highlight className="text-black dark:text-white">
-					made in Munich
-				</Highlight>
+				<Highlight className="text-white">made in Munich</Highlight>
 			</motion.h1>
 		</HeroHighlight>
 	);

@@ -24,7 +24,7 @@ export interface AppsDataItem {
 	color: string;
 	fontColor?: string;
 	storeLinks: StoreItems[];
-	tag: string;
+	tag: "Mac" | "iOS" | "Android" | "Chrome" | "Edge" | "Play";
 	screenshots: Screenshot[];
 	featurelist?: Feature[];
 	privacyInfo?: PrivacyData;
@@ -117,7 +117,7 @@ export const appsData: AppsDataItem[] = [
 	{
 		id: "trilby",
 		title: "Trilby",
-		heroThumb: "/assets/trilby/trilby.png",
+		heroThumb: "/assets/trilby/ts1.png",
 		icon: "/assets/trilby/trilby-logo.webp",
 		description: "Best Hacker News App for Android and iOS - completely free.",
 		color: "#FFF3E9",
@@ -256,7 +256,7 @@ Please note: Scaler does not need and should not ask for any permissions.`
 	{
 		id: "keytrails",
 		title: "KeyTrails",
-		heroThumb: "/assets/keytrails/kt5.png",
+		heroThumb: "/assets/keytrails/kt6.png",
 		icon: "/assets/keytrails/keytrails-logo.png",
 		description:
 			"Present your keystrokes on screen with style. Ultralight and privacy friendly.",
@@ -331,7 +331,7 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 	{
 		id: "cliptonite",
 		title: "Cliptonite",
-		heroThumb: "/assets/cliptonite/logo.png",
+		heroThumb: "https://i.imgur.com/IMfVxsM.png",
 		icon: "/assets/cliptonite/logo.png",
 		description: "Beautiful and Fast Clipboard manager app for macOS.",
 		color: "#09d07e",
@@ -388,7 +388,7 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 	{
 		id: "listcalculation",
 		title: "List Calculation",
-		heroThumb: "/assets/list-calculation/lc-logo.png",
+		heroThumb: "https://imgur.com/moErHxr.png",
 		icon: "/assets/list-calculation/lc-logo.png",
 		description:
 			"Create personal budget sheet or invoice without complex formula!",
