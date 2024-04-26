@@ -6,6 +6,7 @@ import AppsReel from "@/components/AppsReel";
 import MacosSection from "@/components/MacosSection";
 import MobileAppSection from "@/components/MobileAppSection";
 import ReviewSection from "@/components/ReviewSection";
+import ContactSection from "@/components/ContactSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
 			<MacosSection />
 			<ReviewSection />
 			<Feedbacks />
+			<ContactSection />
 		</main>
 	);
 }

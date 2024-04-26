@@ -40,7 +40,7 @@ const ReviewCard = ({ id, content, name, designation }: ReviewCardProps) => {
 			<div className="font-normal text-neutral-200">{content}</div>
 			<div>
 				<p className="font-medium text-white mt-2">{name}</p>
-				<p className="font-normal text-neutral-200">{designation}</p>
+				<p className="font-normal text-neutral-500">{designation}</p>
 			</div>
 		</div>
 	);
