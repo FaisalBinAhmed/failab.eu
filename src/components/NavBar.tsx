@@ -3,8 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 
-import { cn } from "@/lib/utils";
-// import { Icons } from "@/components/icons";
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -19,11 +17,11 @@ import Image from "next/image";
 
 export function NavBar() {
 	return (
-		<div className="p-4 flex flex-row justify-between bg-white text-black">
+		<div className="p-4 flex flex-row-reverse justify-between">
 			<NavMenu />
-			{/* <Link href="/" legacyBehavior passHref>
-				<img className="w-12" src="/assets/failab.webp" />
-			</Link> */}
+			<Link href="/" legacyBehavior passHref>
+				<img className="w-12 cursor-pointer" src="/assets/failab_angled.svg" />
+			</Link>
 		</div>
 	);
 }
@@ -43,7 +41,7 @@ function NavMenu() {
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Apps</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+						<ul className="grid gap-3 p-6 md:w-[400px] z-5 lg:w-[500px] lg:grid-cols-[1fr_1fr]">
 							{appsData.map((app) => (
 								<li key={app.id}>
 									<NavigationMenuLink asChild>
