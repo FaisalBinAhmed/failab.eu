@@ -8,7 +8,7 @@ const MobileAppSection = () => {
 
 	return (
 		<div className="flex flex-col bg-black w-full items-center py-16">
-			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-emerald-500">
 				Mobile apps with focus on
 			</div>
 			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white mb-8">

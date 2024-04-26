@@ -41,12 +41,12 @@ function NavMenu() {
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Apps</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<ul className="grid gap-3 p-6 md:w-[400px] z-5 lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+						<ul className="grid gap-2 p-2 md:w-[400px] z-5 lg:w-[500px] lg:grid-cols-[1fr_1fr]">
 							{appsData.map((app) => (
 								<li key={app.id}>
 									<NavigationMenuLink asChild>
 										<Link
-											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#121212] p-6 no-underline outline-none hover:bg-[#051812] focus:shadow-md"
 											href={`/app/${app.id}`}>
 											<Image
 												src={app.icon}

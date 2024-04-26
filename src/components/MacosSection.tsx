@@ -1,6 +1,5 @@
 import { appsData } from "@/data/apps";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import { color } from "framer-motion";
 
 const AppHeader = ({ thumb }: { thumb: string }) => {
 	return (
@@ -25,7 +24,7 @@ const MacosSection = () => {
 
 	return (
 		<div className="flex flex-col items-center justify-center p-4 my-8">
-			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-emerald-500">
 				Best in class
 			</div>
 			<div className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white pb-8">
