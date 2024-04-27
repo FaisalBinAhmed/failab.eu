@@ -43,7 +43,7 @@ export const appsData: AppsDataItem[] = [
 		id: "tabius",
 		title: "Tabius",
 		heroThumb: "/assets/tabius/tabius.jpeg",
-		icon: "/assets/tabius/tabius-logo.jpeg",
+		icon: "/assets/tabius/tabius_logo.png",
 		description:
 			"Intelligent Tab Grouping Assistant for Chrome and Microsoft Edge. Completely open source.",
 		color: "#B6D1E4",

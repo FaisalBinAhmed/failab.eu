@@ -24,7 +24,7 @@ export default function AppDetails() {
 	return (
 		<div className="w-full p-2 bg-[#121212]">
 			<div className="flex flex-col md:flex-row w-full p-8">
-				<div className="grow min-w-72 flex flex-col gap-4">
+				<div className="flex-1 min-w-72 flex flex-col gap-4">
 					<Image
 						src={app.icon}
 						alt={`${app.title} logo`}
@@ -53,7 +53,19 @@ export default function AppDetails() {
 					</div>
 				</div>
 
-				<div className="flex items-center p-8 md:px-24">
+				<div className="flex w-full md:w-2/3 items-center py-8 overflow-x-scroll">
+					<div className="flex gap-2">
+						{app.screenshots.map((screenshot) => (
+							<img
+								src={screenshot.path}
+								alt={screenshot.description}
+								className="object-contain h-96 w-full"
+							/>
+						))}
+					</div>
+				</div>
+
+				{/* <div className="flex items-center p-8 md:px-24">
 					<Carousel className="">
 						<CarouselContent>
 							{app.screenshots.map((screenshot) => (
@@ -71,7 +83,7 @@ export default function AppDetails() {
 						<CarouselPrevious />
 						<CarouselNext />
 					</Carousel>
-				</div>
+				</div> */}
 			</div>
 			{app.featurelist && <HoverEffect items={app.featurelist} />}
 		</div>
