@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Button } from "./button";
 
 export const BentoGrid = ({
 	className,
@@ -40,7 +41,7 @@ export const BentoGridItem = ({
 		<div
 			// style={{ backgroundColor: color }}
 			className={cn(
-				"row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-none p-4 bg-black border-white/[0.2]  border border-transparent justify-between flex flex-col space-y-4",
+				"row-span-1 rounded-3xl shadow-xl border border-white/[0.1]  shadow-white/[0.05] group/bento hover:shadow-xl transition duration-200 shadow-none p-4 bg-black justify-between flex flex-col space-y-4",
 				className
 			)}>
 			{header}
@@ -53,11 +54,14 @@ export const BentoGridItem = ({
 					{description}
 				</div>
 				{link && (
-					<Link href={link}>
-						<p className=" font-normal mt-1 text-xs text-neutral-500">
-							Learn More
-						</p>
-					</Link>
+					<div className="flex flex-1 mt-2 flex-row-reverse">
+						{/* <Button className="rounded" variant="ghost" asChild>
+							<Link href={link}>Download</Link>
+						</Button> */}
+						<Button className="rounded" variant="ghost" asChild>
+							<Link href={link}>Learn More</Link>
+						</Button>
+					</div>
 				)}
 			</div>
 		</div>

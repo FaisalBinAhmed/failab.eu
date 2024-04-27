@@ -1,9 +1,6 @@
 import { cn } from "@/lib/utils";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
-let keytrailReview =
-	"I've been looking for an app that shows the actual output of the pressed keys for a long time. This app shows e.g. the € symbol pressing the key combination alt-E (German layout). What I know no other app can do, is to display the output of uppercase and lowercase letters. This app does that. A fantastic app. The developer responds quickly and 100% to requests and suggestions. I can't recommend this app highly enough. Thank you.";
-
 export const Highlight = ({
 	children,
 	className
@@ -68,7 +65,7 @@ const ReviewSection = () => {
 				What people are saying
 			</div> */}
 			<TypewriterEffect words={words} />
-			<div className="flex flex-row flex-wrap justify-center gap-4 p-4 my-8">
+			<div className="flex flex-row flex-wrap justify-center gap-4 p-4 mt-8">
 				<ReviewCard
 					id={1}
 					name="Jan Kara"

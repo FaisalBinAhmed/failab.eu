@@ -1,6 +1,7 @@
 import { AppsDataItem, appsData } from "@/data/apps";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { Button } from "./ui/button";
 
 const MobileAppSection = () => {
 	const trilby = appsData.filter((app) => app.id === "trilby");
@@ -53,11 +54,16 @@ const MobileAppCard = ({ app }: { app: AppsDataItem }) => {
 						className="text-m">
 						{app.description}
 					</p>
-					<Link href={`/app/${app.id}`}>
+					<div className="mt-4">
+						<Button className="rounded" variant="outline" asChild>
+							<Link href={`/app/${app.id}`}>Learn More</Link>
+						</Button>
+					</div>
+					{/* <Link href={`/app/${app.id}`}>
 						<p className="font-normal my-1 text-xs text-neutral-400">
 							Learn More
 						</p>
-					</Link>
+					</Link> */}
 				</div>
 			</BackgroundGradient>
 		</div>
