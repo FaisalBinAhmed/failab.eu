@@ -12,18 +12,23 @@ const Footer = () => {
 		<div className="flex flex-col bg-black gap-4 text-neutral-500">
 			<div className="flex flex-col md:flex-row md:justify-between items-center h-96 w-full p-8">
 				<div className="flex flex-col items-center md:items-start text-center md:text-left">
-					<div className="flex flex-row gap-2 my-8">
+					<div className="flex flex-row gap-2 mb-2 mt-8">
 						<Button className="rounded" variant="outline" asChild>
 							<Link target="_blank" href="https://twitter.com/failab_eu">
 								@failab_eu
 							</Link>
 						</Button>
 						<Button className="rounded" variant="outline" asChild>
-							<Link target="_blank" href="https://buymeacoffee.com/faisalbin">
-								Buy Me a Coffee
+							<Link target="_blank" href="https://twitter.com/FaisalBAhmed">
+								@FaisalBAhmed
 							</Link>
 						</Button>
 					</div>
+					<Button className="rounded my-8" variant="outline" asChild>
+						<Link target="_blank" href="https://buymeacoffee.com/faisalbin">
+							Buy Me a Coffee
+						</Link>
+					</Button>
 					<p>© Failab {date}</p>
 					<p>Made with ♥ in Munich</p>
 				</div>

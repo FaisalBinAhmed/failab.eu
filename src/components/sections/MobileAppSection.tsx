@@ -1,7 +1,7 @@
 import { AppsDataItem, appsData } from "@/data/apps";
 import Link from "next/link";
-import { BackgroundGradient } from "./ui/background-gradient";
-import { Button } from "./ui/button";
+import { BackgroundGradient } from "../ui/background-gradient";
+import { Button } from "../ui/button";
 
 const MobileAppSection = () => {
 	const trilby = appsData.filter((app) => app.id === "trilby");

@@ -1,5 +1,5 @@
 import { appsData } from "@/data/apps";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
 const AppHeader = ({ thumb }: { thumb: string }) => {
 	return (
