@@ -1,13 +1,4 @@
-import FeatureCard from "@/components/FeatureCard";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import {
-	Carousel,
-	CarouselContent,
-	CarouselItem,
-	CarouselNext,
-	CarouselPrevious
-} from "@/components/ui/carousel";
-import { featureColors } from "@/constants";
 import { appsData } from "@/data/apps";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,7 +44,7 @@ export default function AppDetails() {
 					</div>
 				</div>
 
-				<div className="flex w-full md:w-2/3 items-center py-8 overflow-x-scroll">
+				<div className="flex w-full md:w-2/3  items-center py-8 overflow-x-scroll">
 					<div className="flex gap-2">
 						{app.screenshots.map((screenshot) => (
 							<img
@@ -64,26 +55,6 @@ export default function AppDetails() {
 						))}
 					</div>
 				</div>
-
-				{/* <div className="flex items-center p-8 md:px-24">
-					<Carousel className="">
-						<CarouselContent>
-							{app.screenshots.map((screenshot) => (
-								<CarouselItem key={screenshot.path}>
-									<div className="">
-										<img
-											src={screenshot.path}
-											alt={screenshot.description}
-											className="object-contain h-96 w-full"
-										/>
-									</div>
-								</CarouselItem>
-							))}
-						</CarouselContent>
-						<CarouselPrevious />
-						<CarouselNext />
-					</Carousel>
-				</div> */}
 			</div>
 			{app.featurelist && <HoverEffect items={app.featurelist} />}
 		</div>
