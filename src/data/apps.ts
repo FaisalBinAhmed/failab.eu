@@ -446,5 +446,22 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 			data: `List Calculation does not collect any user information. User preference for the app is stored within the device itself and does not leave the device.
 `
 		}
+	},
+	{
+		id: "betterreadinglist",
+		title: "Better Reading List",
+		heroThumb: "/assets/brl/brl.png",
+		icon: "/assets/brl/icon.png",
+		description:
+			"Better Reading List makes it easier to read and add item to Chrome's built in Reading List.",
+		tag: "Chrome",
+		color: "#737373",
+		screenshots: [],
+		featurelist: [],
+		storeLinks: [],
+		privacyInfo: {
+			lastDate: "11/05/2024",
+			data: "Better Reading List does not collect any data. It does not use any third party tools. Everything is provided with browser's native APIs."
+		}
 	}
 ];
