@@ -463,5 +463,25 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 			lastDate: "11/05/2024",
 			data: "Better Reading List does not collect any data. It does not use any third party tools. Everything is provided with browser's native APIs."
 		}
+	},
+	{
+		id: "hotcornerpro",
+		title: "HotCorner Pro",
+		heroThumb: "/assets/hcp/hcp promo.png",
+		icon: "/assets/hcp/icon.png",
+		description:
+			"Trigger custom actions by double-clicking on page corners. Save time with predefined corner shortcuts.",
+		tag: "Chrome",
+		color: "#008BFF",
+		screenshots: [{
+			path: "/assets/hcp/hcp promo.png",
+			description: "HotCorner Pro in action"
+		}],
+		featurelist: [],
+		storeLinks: [],
+		privacyInfo: {
+			lastDate: "19/05/2025",
+			data: "HotCorner Pro does not collect any data. It does not use any third party tools. Everything is provided with browser's native APIs."
+		}
 	}
 ];
