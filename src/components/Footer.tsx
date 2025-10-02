@@ -4,10 +4,6 @@ import { Button } from "./ui/button";
 const Footer = () => {
 	const date = new Date().getFullYear();
 
-	function openLink(link: string) {
-		window.open(link, "_blank noreferer");
-	}
-
 	return (
 		<div className="flex flex-col bg-black gap-4 text-neutral-500">
 			<div className="flex flex-col md:flex-row md:justify-between items-center h-96 w-full p-8">

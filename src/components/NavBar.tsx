@@ -41,7 +41,7 @@ function NavMenu() {
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Apps</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<ul className="grid gap-2 p-2 md:w-[400px] z-5 lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+						<ul className="grid gap-2 p-2 md:w-[400px] z-5 lg:w-[500px] lg:grid-cols-[1fr_1fr] z-10 max-h-[600px] overflow-y-auto">
 							{appsData.map((app) => (
 								<li key={app.id}>
 									<NavigationMenuLink asChild>

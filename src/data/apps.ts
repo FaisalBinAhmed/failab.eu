@@ -200,7 +200,7 @@ export const appsData: AppsDataItem[] = [
 	{
 		id: "scaler",
 		title: "Scaler",
-		heroThumb: "/assets/scaler/scaler.jpeg",
+		heroThumb: "https://i.postimg.cc/vZBB91DD/bento-scaler-v2.png",
 		icon: "/assets/scaler/scaler-logo.webp",
 		description: "Realtime bandwidth monitor application for macOS devices.",
 		color: "#208DCF",
@@ -213,11 +213,11 @@ export const appsData: AppsDataItem[] = [
 		tag: "Mac",
 		screenshots: [
 			{
-				path: "/assets/scaler/sc1.jpeg",
+				path: "https://i.postimg.cc/NfWXg7dY/scaler-v2-1.png",
 				description: "this is a screenshot description"
 			},
 			{
-				path: "/assets/scaler/sc2.jpeg",
+				path: "https://i.postimg.cc/tC1PQmt8/Screenshot-2024-06-02-at-8-32-32-PM.png",
 				description: "this is another screenshot description"
 			}
 		],
@@ -330,7 +330,7 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 	{
 		id: "cliptonite",
 		title: "Cliptonite",
-		heroThumb: "https://i.imgur.com/IMfVxsM.png",
+		heroThumb: "https://i.postimg.cc/xjhgBHDh/bento-clipto.png",
 		icon: "/assets/cliptonite/logo.png",
 		description: "Beautiful and Fast Clipboard manager app for macOS.",
 		color: "#09d07e",
@@ -344,15 +344,15 @@ Please note: KeyTrails needs Input Monitoring permission to get your keyboard an
 		tag: "Mac",
 		screenshots: [
 			{
-				path: "https://i.imgur.com/IMfVxsM.png",
+				path: "https://i.postimg.cc/dtcr89K3/clip1.png",
 				description: "this is a screenshot description"
 			},
 			{
-				path: "https://i.imgur.com/J8zMqWK.png",
+				path: "https://i.postimg.cc/151wpKZ6/clip2.png",
 				description: "this is a screenshot description"
 			},
 			{
-				path: "https://i.imgur.com/CKMh2uo.png",
+				path: "https://i.postimg.cc/vHwfWvdM/clip3.png",
 				description: "this is a screenshot description"
 			}
 		],
@@ -387,7 +387,7 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 	{
 		id: "listcalculation",
 		title: "List Calculation",
-		heroThumb: "https://imgur.com/moErHxr.png",
+		heroThumb: "https://i.postimg.cc/vmZZyJLR/cal2.png",
 		icon: "/assets/list-calculation/lc-logo.png",
 		description:
 			"Create personal budget sheet or invoice without complex formula!",
@@ -401,23 +401,11 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 		tag: "iOS",
 		screenshots: [
 			{
-				path: "https://imgur.com/moErHxr.png",
+				path: "https://i.postimg.cc/rpZFwfQr/cal1.png",
 				description: "this is a screenshot description"
 			},
 			{
-				path: "https://imgur.com/Vj075iG.png",
-				description: "this is a screenshot description"
-			},
-			{
-				path: "https://imgur.com/nhZmTb7.png",
-				description: "this is a screenshot description"
-			},
-			{
-				path: "https://imgur.com/9nT0wPv.png",
-				description: "this is a screenshot description"
-			},
-			{
-				path: "https://imgur.com/gLZiDbR.png",
+				path: "https://i.postimg.cc/vmZZyJLR/cal2.png",
 				description: "this is a screenshot description"
 			}
 		],
@@ -456,9 +444,17 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 			"Better Reading List makes it easier to read and add item to Chrome's built in Reading List.",
 		tag: "Chrome",
 		color: "#737373",
-		screenshots: [],
+		screenshots: [
+			{
+				path: "https://i.postimg.cc/VkmCrLPH/brl-promo.png",
+				description: "Better Reading List in action"
+			}
+		],
 		featurelist: [],
-		storeLinks: [],
+		storeLinks: [{
+			storeType: "chrome",
+			link: "https://chromewebstore.google.com/detail/better-reading-list/dhadoebaijmhnilklfmbjnbfgbfmogln?hl=en"
+		}],
 		privacyInfo: {
 			lastDate: "11/05/2024",
 			data: "Better Reading List does not collect any data. It does not use any third party tools. Everything is provided with browser's native APIs."
@@ -478,10 +474,45 @@ Please note: Cliptonite does not need and should not ask for any permissions.`
 			description: "HotCorner Pro in action"
 		}],
 		featurelist: [],
-		storeLinks: [],
+		storeLinks: [{
+			storeType: "chrome",
+			link: "https://chromewebstore.google.com/detail/hotcorner-pro-quick-mouse/fcokgapdfakgondiamocnkommfjojoen"
+		}],
 		privacyInfo: {
 			lastDate: "19/05/2025",
 			data: "HotCorner Pro does not collect any data. It does not use any third party tools. Everything is provided with browser's native APIs."
+		}
+	},
+	{
+		id: "retila",
+		title: "Retila - Read It Later",
+		heroThumb: "https://i.postimg.cc/nLbyx5y6/retila1.png",
+		icon: "/assets/retila/icon.png",
+		description: "Retila - Read It Later is an app to save and manage interesting links, webpages, and sites you encounter every day.",
+		tag: "iOS",
+		color: "#c3b7e0",
+		screenshots: [
+			{
+				path: "https://i.postimg.cc/nLbyx5y6/retila1.png",
+				description: "Retila - Read It Later in action"
+			},
+			{
+				path: "https://i.postimg.cc/mDMq5SXq/retila2.png",
+				description: "Retila - Read It Later in action"
+			},
+			{
+				path: "https://i.postimg.cc/yN2tjGPv/retila3.png",
+				description: "Retila - Read It Later in action"
+			}
+		],
+		featurelist: [],
+		storeLinks: [{
+			storeType: "macOS",
+			link: "https://apps.apple.com/us/app/retila-read-it-later/id6746295028"
+		}],
+		privacyInfo: {
+			lastDate: "24/04/2025",
+			data: `Retila - Read It Later does not collect any user information. User preference for the app is stored within the device itself and does not leave the device.`
 		}
 	}
 ];
