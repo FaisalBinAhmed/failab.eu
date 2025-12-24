@@ -14,11 +14,6 @@ const Footer = () => {
 								@failab_eu
 							</Link>
 						</Button>
-						<Button className="rounded" variant="outline" asChild>
-							<Link target="_blank" href="https://twitter.com/FaisalBAhmed">
-								@FaisalBAhmed
-							</Link>
-						</Button>
 					</div>
 					<Button className="rounded my-8" variant="outline" asChild>
 						<Link target="_blank" href="https://buymeacoffee.com/faisalbin">

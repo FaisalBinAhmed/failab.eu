@@ -49,17 +49,6 @@ const About = () => {
 				</Link>{" "}
 				thing. :){" "}
 			</p>
-			<p>
-				If you want to keep updated and learn about new apps being released, you
-				can also{" "}
-				<Link
-					className="underline text-blue-500"
-					href="https://twitter.com/faisalbahmed"
-					target="_blank">
-					follow me on Twitter
-				</Link>{" "}
-				and other <a href="/contact">social networks</a>.
-			</p>
 			<h4>Love, Faisal</h4>
 		</div>
 	);

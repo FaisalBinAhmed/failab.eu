@@ -13,15 +13,6 @@ const Contact = () => {
 			<p>
 				<Link
 					className="underline text-blue-500"
-					href="https://twitter.com/faisalbahmed"
-					target="_blank">
-					Twitter
-				</Link>{" "}
-				(Author)
-			</p>
-			<p>
-				<Link
-					className="underline text-blue-500"
 					href="https://linkedin.com/in/faisalbin"
 					target="_blank">
 					LinkedIn
